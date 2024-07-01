@@ -1,0 +1,218 @@
+body{
+	background: whitesmoke;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px; 
+	line-height: 1.6em;
+	margin: 0;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow:hidden;
+}
+
+#main-header{
+	background: orange;
+	color: white;
+	text-align: left;
+}
+
+
+
+#navbar{
+	background: grey;
+	color: white;
+}
+
+#navbar ul{
+	padding: 0;
+	list-style:none;
+	text-align: right;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar a{
+	color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#showcase{
+	background-color: gainsboro;
+	background-position: center right;
+	min-height: 100px;
+	margin-bottom: 30px;
+	text-align: center;
+
+}
+
+#showcase h1{
+	color: black;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 20px;
+	margin-top: 0px;
+}
+
+#showcase h2{
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-bottom: 100px;
+}
+
+#a-main h1{
+	text-align: center;
+}
+
+#a-side{
+	text-align: center;
+}
+
+.circular-image{
+	min-height: 20%;
+	margin-left: 180px;
+	border-radius: 30%;
+}
+
+#main{
+	float: left;
+	width: 70%;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	float: right;
+	width: 30%;
+	background: darkgrey;
+	color: white;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#c-main{
+	float: right;
+	width:30%;
+	background: darkgrey;
+	color: white;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+#s-main{
+	text-align: center;
+}
+
+#s-main h2{
+	font-size: !important;
+}
+
+#s-side{
+	display: flex;
+	float: left;
+	width: 30%;
+
+}
+
+.stm_label{
+	background: white;
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-top: 50px;
+	border: 1px solid grey;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+
+button{
+	background: black;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#my-form{
+	padding: 20px;
+}
+
+.my-form .form-group {
+	padding-bottom: 0px;
+
+}
+
+.my-form label{
+	display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+	padding: 15px;
+	width: 250px;
+}
+
+.my-form input[type="submit"]{
+	background-color: black;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 15px;
+	border: none;
+}
+
+#s-line{
+	width: 10%;
+	color: lightblue;
+}
+
+#c-line{
+	width: 100%;
+	color: lightgray;
+}
+
+
+#main-footer{
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+@media(max-width: 600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}
+
+@media(max-width: 800px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#c-main{
+		width:100%;
+		float:none;
+	}
+}
+
+@media (max-width: 1000px) {
+	.circular-image{
+		width: 100%;
+	    border-radius: 30%;
+		margin-left: 0px;
+	}
+}
+
