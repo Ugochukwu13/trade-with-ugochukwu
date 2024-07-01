@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PRODUCT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    body {
+        box-sizing: border-box;
+    }
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    /* Product contanier */
+    .contanier-product {
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .row-product {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media screen and (max-width:800px) {
+        .row-product {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .contanier-product {
+           max-width: 100%;
+           overflow: hidden;
+           box-sizing: border-box;
+           margin-left: 70px;
+        }
+        
+
+    }
+
+    .card-content{
+        font-size: 15px;
+        font-weight: 100;
+        text-align: center;
+        margin: 10px 0px;
+        position: relative;
+    }
+
+    .card {
+        overflow: hidden;
+        width: 250px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        position: relative;
+    }
+
+    .card:hover {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+
+    .col-sm-4 {
+      cursor: pointer;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .text-reset {
+      color: gray;
+      font-size: medium;
+    }
+
+    footer a:hover {
+      color: rgb(77, 76, 76);
+      text-decoration-line: none;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Daniel Store</h1>      
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand hidden" href="#">Daniel Store</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="product.html">Products</a></li>
+        <li><a href="deal.html">Deals</a></li>
+        <li><a href="store.html">Stores</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="contanier-product">
+    <div class="row-product">
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/first-product.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Special Offer</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/phone.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Phones & Tablets</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/tv.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Television</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/fa.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Fashion Deals</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/refrigerator.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Refrigerator</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/gen.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Generator</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/ma.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Mobile Accessories</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/lp.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Computing Deals</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/he.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Home Essentials</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/gd.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Grocery Deals</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Beauty.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Beauty</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Mens-fashion.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Men's Fashion</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Sneakers.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Sneakers</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/womens-fashion.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Women's Fashion</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/mobile-accessories.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Mobile Accessories</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Air_conditioner.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Air Conditioner</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Gaming.jpg" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Gaming Deals</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Kids_Corner.jpg" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Kid's Corner</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Fans.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Fans</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Fridgee.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Fridgee</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Washer.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Washing Machine</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Pressing_Iron.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Pressing Iron</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Freezer.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Freezer</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/home.png" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Homes & Offices</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-hearder">
+                <a href="#"><img src="image/Supermarket.jpg" alt="Image"></a>
+            </div>
+
+            <div class="card-content">
+                <p>Supermarket Deals</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">  
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+  </footer>
+  
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted" style="font-size: 17px;">
+    
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <h3>Daniel Store</h3>
+            </h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio asperiores id quas cumque velit, 
+              aperiam facilis, dolores obcaecati fugiat debitis, magni nulla porro ducimus mollitia quisquam aliquid.
+              Unde, nam libero.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4" style="margin-top: 20px;">
+              Products
+            </h4>
+            <p>
+              <a href="#!" class="text-reset">Fashion</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Computing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Home & Office</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Phones & Tablets</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Gaming</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Fitness</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4"  style="margin-top: 20px;">
+              Useful links
+            </h4>
+            <p>
+              <a href="#!" class="text-reset"> Service Center </a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4"  style="margin-top: 20px;">Contact</h4>
+            <p> Anambra, Onitsha, Nigeria </p>
+            <p>
+              chukwuokpalaugochukwu@gmail.com
+            </p>
+            <p> +2349161331211</p>
+            <p> +2348021092612</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="font-size: 16px; margin-top: 35px; padding: 0px;">
+      © 2024 Copyright Daniel Store
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+</body>
+</html>

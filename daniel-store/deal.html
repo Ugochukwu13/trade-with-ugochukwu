@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DEAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    body{
+      font-family: sans-serif;
+      background-color: white;
+      margin: 0;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      margin: 0;
+      padding-top: 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0;
+    }
+
+    p {
+      text-align: center;
+      color: rgb(63, 62, 62);
+      padding-top: 0 8px;
+    }
+
+    h6 {
+      font-size: 26px;
+      text-align: center;
+      color: #222f3e;
+      margin: 0;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .gallery ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+
+    .gallery li {
+      padding: 5px;
+    }
+
+    .fa {
+      font-size: 25px;
+      transition: .4s;
+    }
+
+    .checked {
+      color: orange;
+    }
+    
+    .fa:hover {
+      transform: scale(1.3);
+      transition: .6s;
+    }
+
+    .gallery button{
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      width: 100%;
+      padding: 15px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      margin-top: 5px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: orange;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .content {
+      width: 20%;
+      margin: 15px;
+      box-sizing: border-box;
+      float: left;
+      text-align: center;
+      border-radius: 20px;
+      cursor: pointer;
+      padding-top: 10px;
+      box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      transition: -3s;
+    }
+
+    .content:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      transform: translate(0px, -8px);
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+
+    }
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+
+    .col-sm-4 {
+      cursor: pointer;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .text-reset {
+      color: gray;
+      font-size: medium;
+    }
+
+    footer a:hover {
+      color: rgb(77, 76, 76);
+      text-decoration-line: none;
+    }
+
+    @media(max-width:1000px){
+      header h1{
+        font-size: 25px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .content{
+        width: 92%;
+      }
+    }
+
+   
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Daniel Store</h1>      
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand hidden" href="#">Daniel Store</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li class="active"><a href="deal.html">Deals</a></li>
+        <li><a href="store.html">Stores</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header><h1>Today's Deal</h1></header><hr>
+
+<div class="gallery">
+  <div class="content">
+    <img src="image/deal1.jpg" alt="Image">
+    <h3>Monitor</h3>
+    <p>Hp M24F 23.8-inches Diagonal FHD IPS LED Monitor</p>
+    <h6>$345.00</h6>
+    <ul>
+      <li><i class="fa fa-star checked"></i></li>
+      <li><i class="fa fa-star checked"></i></li>
+      <li><i class="fa fa-star checked"></i></li>
+      <li><i class="fa fa-star checked"></i></li>
+      <li><i class="fa fa-star checked"></i></li>
+    </ul>
+    <button class="buy-1">ADD TO CART</button>
+  </div>
+
+  <div class="content">
+    <img src="image/deal2.jpg" alt="Image">
+    <h3>Laptop</h3>
+    <p>Hp EliiteBook 840 G6 Intel Core I5 Touchscreen 16GB RAM / 1TB SSD</p>
+    <h6>$400.00</h6>
+    <ul class="deal">
+      <li><i class="fa fa-star checked"></i></li>
+      <li><i class="fa fa-star checked"></i></li>
+      <li><i class="fa fa-star checked"></i></li>
+      <li><i class="fa fa-star checked"></i></li>
+      <li><i class="fa fa-star"></i></li>
+    </ul>
+    <button class="buy-1">ADD TO CART</button>
+  </div>
+    
+
+    <div class="content">
+  <img src="image/deal3.jpg" alt="Image">
+  <h3>Tablet</h3>
+  <p>Cidea Android 12 Adults 18 Tablet 6GB RAM / 256GB ROM</p>
+  <h6>$58.00</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star"></i></li>
+    <li><i class="fa fa-star"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+
+    <div class="content">
+  <img src="image/deal4.jpg" alt="Image">
+  <h3>Printer</h3>
+  <p>Mini Thermal Printer Wireless Bluetooth Printer 58mm Papper</p>
+  <h6>$20.00</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star "></i></li>
+    <li><i class="fa fa-star"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+
+    <div class="content">
+  <img src="image/deal5.jpg" alt="Image">
+  <h3>Television</h3>
+  <p>Royal 43 Inches LED TV (RTV43F7J) +1 Year Warranty</p>
+  <h6>$120.00</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+
+    <div class="content">
+  <img src="image/deal6.jpg" alt="Image">
+  <h3>Headphone</h3>
+  <p>P47 IMPROVED 5.0 Wireless Bluetooth Stereo Foldable Headset</p>
+  <h6>$10.00</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star"></i></li>
+    <li><i class="fa fa-star"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+
+    <div class="content">
+  <img src="image/deal7.jpg" alt="Image">
+  <h3>Bluetooth Speaker</h3>
+  <p>Zealot S67 Portable 60W Wireless Bluetooth Speaker</p>
+  <h6>$13.00</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star"></i></li>
+    <li><i class="fa fa-star"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+
+    <div class="content">
+  <img src="image/deal8.jpg" alt="Image">
+  <h3>Flash Drive Reader</h3>
+  <p>Otg Type C to Type A USB 3.0 Android Flash Drive Reader</p>
+  <h6>$2.00</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star"></i></li>
+    <li><i class="fa fa-star"></i></li>
+    <li><i class="fa fa-star"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+
+    <div class="content">
+  <img src="image/deal9.jpg" alt="Image">
+  <h3>TV Guard</h3>
+  <p>TV Guard Voltage Protection -<br> White 0040</p>
+  <h6>$1.50</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star"></i></li>
+    <li><i class="fa fa-star"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+
+    <div class="content">
+  <img src="image/deal10.jpg" alt="Image">
+  <h3>Home Theatre</h3>
+  <p>Super X Bass Bluetooth Home Theatre System 3.1 Speakers!</p>
+  <h6>$89.00</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+
+    <div class="content">
+  <img src="image/deal11.jpg" alt="Image">
+  <h3>Perfume</h3>
+  <p>Deal Long Lasting Eau De Parfum + Body Spray for Men And Women</p>
+  <h6>$4.00</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+
+    <div class="content">
+  <img src="image/deal12.jpg" alt="Image">
+  <h3>Washing Machine</h3>
+  <p>Nexus 5.5kg Twin Tub Washing Machine (NX- WM - 5SA)</p>
+  <h6>$100.00</h6>
+  <ul>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+    <li><i class="fa fa-star checked"></i></li>
+  </ul>
+  <button class="buy-1">ADD TO CART</button>
+    </div>
+</div>
+
+<footer class="container-fluid text-center"> 
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+  </footer>
+  
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted" style="font-size: 17px;">
+    
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <h3>Daniel Store</h3>
+            </h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio asperiores id quas cumque velit, 
+              aperiam facilis, dolores obcaecati fugiat debitis, magni nulla porro ducimus mollitia quisquam aliquid.
+              Unde, nam libero.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4"  style="margin-top: 20px;">
+              Products
+            </h4>
+            <p>
+              <a href="#!" class="text-reset">Fashion</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Computing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Home & Office</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Phones & Tablets</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Gaming</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Fitness</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4" style="margin-top: 20px;">
+              Useful links
+            </h4>
+            <p>
+              <a href="#!" class="text-reset">Service Center</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4" style="margin-top: 20px;">Contact</h4>
+            <p> Anambra, Onitsha, Nigeria </p>
+            <p>
+              chukwuokpalaugochukwu@gmail.com
+            </p>
+            <p> +2349161331211</p>
+            <p> +2348021092612</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="font-size: 16px; margin-top: 35px; padding: 0px;">
+      © 2024 Copyright Daniel Store
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  </body>
+  </html>  

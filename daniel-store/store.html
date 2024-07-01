@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>STORE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    body{
+      box-sizing: border-box;
+    }
+
+    header h2 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 45px;
+      margin: 50px;
+    }
+
+    .contanier {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .contanier::after {
+    content: '';
+    clear: both;
+    display: block;
+    }
+
+    .flagship2{
+      content: '';
+      clear: both;
+      display: block;
+    }
+
+    .contanier-main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flagship {
+      background-color: #f2f2f2;
+      margin-left: 40px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      padding: 30px;
+    }
+
+    .flagship2 {
+      background-color: #f2f2f2;
+      margin-left: 40px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      margin-right: 60px;
+      padding: 30px;
+    }
+
+    .stockist {
+      background-color: #f2f2f2;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 0;
+      margin-bottom: 50px;
+      padding: 30px;
+    }
+
+    .stockist2{
+      background-color: #f2f2f2;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 0;
+      margin-bottom: 50px;
+      padding: 30px;
+    }
+
+    .flagship h4 {
+      font-family: 'Times New Roman', Times, serif;
+      margin-bottom: 20px;
+      margin-right: 50px;
+      font-size: 22px;
+    }
+
+    .flagship2 h4 {
+      font-family: 'Times New Roman', Times, serif;
+      margin-bottom: 20px;
+      margin-right: 60px;
+      font-size: 22px;
+    }
+
+    .stockist h4 {
+      font-family: 'Times New Roman', Times, serif;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .stockist2 h4 {
+      font-family: 'Times New Roman', Times, serif;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .flagship h5 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(211, 161, 34);
+      margin-bottom: 10px;
+      margin-right: 50px;
+    }
+
+    .flagship2 h5 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(211, 161, 34);
+      margin-bottom: 10px;
+      margin-right: 60px;
+    }
+
+    .stockist h5 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(211, 161, 34);
+      margin-bottom: 10px;
+    }
+
+    .stockist2 h5 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(211, 161, 34);
+      margin-bottom: 10px;
+    }
+
+    .flagship p {
+      margin-bottom: 35px;
+      margin-right: 60px;
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    .flagship2 p {
+      margin-bottom: 35px;
+      margin-right: 60px;
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    .stockist p {
+      margin-bottom: 35px;
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    .stockist2 p {
+      margin-bottom: 35px;
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    @media(max-width:800px){
+      .flagship2 {
+        margin-right: 40px;
+      }
+
+      .flagship {
+        margin-right: 40px;
+      }
+
+      .contanier {
+        display: block;
+    }
+
+    .contanier-main {
+      display: block;
+    }
+
+    header h2 {
+      font-size: 28px;
+    }
+    
+
+    }
+
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+
+    .col-sm-4 {
+      cursor: pointer;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .text-reset {
+      color: gray;
+      font-size: medium;
+    }
+
+    footer a:hover {
+      color: rgb(77, 76, 76);
+      text-decoration-line: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Daniel Store</h1>      
+    <p>Mission, Vission & Values</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand hidden" href="#">Daniel Store</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="deal.html">Deals</a></li>
+        <li class="active"><a href="store.html">Stores</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="section">
+  <header><h2>Daniel Store Flagship Store</h2></header>
+  <div class="contanier">
+    <div class="flagship">
+      <h4>LAGOS</h4>
+      <h5>Chuks Daniel Supermarket</h5>
+      <p>Plot 9 Northern Business District, along <br> 
+      Admiralty Way, Lekki Phase 1, Lagos</p>
+
+
+      <h5>Chuks Daniel Supermarket</h5>
+      <p>14 Isaac John Street, GRA, Ikeja, Lagos</p>
+
+
+      <h5>Chuks Daniel Supermarket</h5>
+      <p>Ologolo , Agungi lekki</p>
+
+
+      <h5>Chuks Daniel Supermarket</h5>
+      <p>No 55 Adeniran Ogunsanya Street, Surulere, <br>
+      Lagos</p>
+    </div>
+
+    <div class="flagship2">
+      <h4>Abuja</h4>
+      <h5>Chuks Daniel Supermarket</h5>
+      <p>9 Capetown Street, Wuse Zone 4, Abuja</p>
+    </div>
+  </div>
+
+  <header><h2>Stockist Center</h2></header>
+
+  <div class="contanier-main">
+      <div class="stockist">
+        <h4>LAGOS RETAIL OUTLETS</h4>
+        <h5>MMA2</h5>
+      <p>Departure Hall MMA2 Ikeja Lagos
+        <br>
+        100242 Lagos
+        <br>
+        Nigeria
+        <br>
+        08062143030</p>
+
+      <h5>Landmark</h5>
+      <p>Landmark Mall, VI, Lagos
+        <br>
+        100242 Lagos
+        <br>
+        Nigeria
+        <br>
+        08155975356</p>
+
+      <h5>Apapa Mall</h5>
+      <p>13 Park Lane Apapa Lagos State
+        <br>
+        100242 Lagos
+        <br>
+        Nigeria
+        <br>
+        07019472540</p>
+
+
+      <h5>Ligali Branch</h5>
+      <p>52 Abeni plaza, Ligali-Ayorinde street, beside KFC, VI, Lagos.
+        <br>
+        101241 Victoria island, Lagos
+        <br>
+        Nigeria
+        <br>
+        09053835710</p>
+
+
+      <h5>Simbiat Mall</h5>
+      <p>22, Simbiat Abiola Way, Ikeja
+        <br>
+        100242 Lagos
+        <br>
+        Nigeria
+        <br>
+        08033271282</p>
+
+      <h5>Prime Mall Shop</h5>
+      <p>Orchid road, after Chevron second toll gate,<br> off Lekki- Epe expressway, Lagos
+        <br>
+        105102 Lagos
+        <br>
+        Nigeria
+        <br>
+        09161331211</p>
+
+      <h5>International Airport</h5>
+      <p>New International Terminal of Murtala <br> Muhammed International Airport, Ikeja , Lagos
+        <br>
+        1000001 Lagos
+        <br>
+        Nigeria
+        <br>
+        09031289557</p>
+
+      <h5>Bannex Mall</h5>
+      <p>Plot 1 and 10 Akiogun Road, Oniru, Lekki, Lagos
+        <br>
+        1000001 Lagos
+        <br>
+        Nigeria
+        <br>
+        09036912340</p>
+    </div>
+    <div class="stockist2">
+      <h4>OTHER RETAIL OUTLETS</h4>
+      <h5>Ringroad</h5>
+      <p>The Palms, Ringroad Ibadan Oyo State
+        <br>
+        203109 Oyo
+        <br>
+        Nigeria
+        <br>
+        07015827239</p>
+
+
+      <h5>Foodco Mall</h5>
+      <p>MKO Abiola Way, Oluyole
+        <br>
+        200261 Ibadan
+        <br>
+        Nigeria
+        <br>
+        08050691595</p>
+
+
+      <h5>Foodco Jericho</h5>
+      <p>Foodco, Jericho nursing home, all saints road, Ibadan.
+        <br>
+        200272 Ibadan
+        <br>
+        Nigeria
+        <br>
+        09152592122</p>
+
+        <h5>Onitsha mall</h5>
+        <p>ABS Awka road by Park road Onitsha Anambra State
+          <br>
+          432107 Anambra
+          <br>
+          Nigeria
+          <br>
+          09084408810</p>
+
+        <h5>Ota Mall</h5>
+        <p>The Palms Ota- Former Gateway  Hotel Premises Sango Ota Ogun State
+          <br>
+          110 Ogun
+          <br>
+          Nigeria
+          <br>
+          09096440462</p>
+
+        <h5>Owerri Outlett Store (Priceless Mall)</h5>
+        <p>Plot 12b Off Port Harcourt Road Youth Center Layout, Concord Hotel Boulevard, New Owerri
+          <br>
+          460271 Owerri
+          <br>
+          Nigeria
+          <br>
+          09150493175</p>
+
+        <h5>Osun store</h5>
+        <p>Osun Mall, Olaiya road, Oshogbo
+          <br>
+          230284 Oshogbo
+          <br>
+          Nigeria
+          <br>
+          09053790053</p>
+
+        <h5>PortHarcourt Mall</h5>
+        <p>No. 1 Azikiwe Road PortHracourt Rivers State
+          <br>
+          500001 Rivers
+          <br>
+          Nigeria
+          <br>
+          09082899870</p>
+
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center"> 
+    <form class="form-inline">Get deals:
+      <input type="email" class="form-control" size="50" placeholder="Email Address">
+      <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+  </footer>
+  
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted" style="font-size: 17px;">
+    
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <h3>Daniel Store</h3>
+            </h6>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio asperiores id quas cumque velit, 
+              aperiam facilis, dolores obcaecati fugiat debitis, magni nulla porro ducimus mollitia quisquam aliquid.
+              Unde, nam libero.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4"  style="margin-top: 20px;">
+              Products
+            </h4>
+            <p>
+              <a href="#!" class="text-reset">Fashion</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Computing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Home & Office</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Phones & Tablets</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Gaming</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Fitness</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4" style="margin-top: 20px;">
+              Useful links
+            </h4>
+            <p>
+              <a href="#!" class="text-reset">Service Center</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4" style="margin-top: 20px;">Contact</h4>
+            <p> Anambra, Onitsha, Nigeria </p>
+            <p>
+              chukwuokpalaugochukwu@gmail.com
+            </p>
+            <p> +2349161331211</p>
+            <p> +2348021092612</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="font-size: 16px; margin-top: 35px; padding: 0px;">
+      © 2024 Copyright Daniel Store
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  </body>
+  </html>
