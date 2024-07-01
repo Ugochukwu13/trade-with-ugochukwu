@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>News Api Project</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="navbar">
+            <a class="logo" href="index.html">News.</a>
+
+            <div class="search-container">
+                <input type="text" placeholder="Search new here..." id="search-input">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="blog-container" class="obj.width">
+        <div class="blog-card">
+            <img src="https://media.premiumtimesng.com/wp-content/files/2022/07/Tony-Elumelu.jpeg" alt="Tony O Elumelu">
+            <h2>Tony O. Elumelu</h2>
+            <p>Tony O. Elumelu is one of Africa’s leading investors and philanthropists. He is the Founder and Chairman of Heirs Holdings, his family owned investment company, committed to improving lives and transforming lives, through investments in strategic sectors of the African economy.</p>
+        </div>
+        <div class="blog-card">
+            <img src="https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/Adaora-Umeoji.jpg" alt="Adaora Umeoji">
+            <h2>Adaora Umeoji</h2>
+            <p>Zenith Bank Plc has announced the appointment of Dame (Dr.) Adaora Umeoji, OON, as Group Managing Director/Chief Executive with effect from June 1, 2024, subject to approval by the Central Bank of Nigeria (CBN). She takes over from Dr. Ebenezer Onyeagwu.</p>
+        </div>
+        <div class="blog-card">
+            <img src="https://www.firstbanknigeria.com/wp-content/uploads/2024/05/Olusegun-Alebiosu-Ag.-CEO.jpg" alt="Olusegun Alebiosu">
+            <h2>Olusegun Alebiosu</h2>
+            <p>Olusegun Alebiosu was appointed the Acting Managing Director/Chief Executive Officer, First Bank of Nigeria Limited (FirstBank) in April 2024.He was until this appointment the Executive Director, Chief Risk Officer and Executive Compliance Officer since January 2022.</p>
+        </div>
+        <div class="blog-card">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QEBUQEA8PDxAVDw8QFRAQDw8QDw0PFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQFy0lIB8tLS0tKy0rKy0tLSstLS0rLS0tLS0tLSstLS0tKystLS0rLSstLS0tLS0tLS0tLS0tLf/AABEIALEBHAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAUGBwj/xAA/EAACAQIEAgYHBgQFBQAAAAAAAQIDEQQFITESQQYiUWFxgRMyQpGhscEHFCNy0fAzUmKCNHOy4fEVNpKi0v/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACIRAQEAAgICAwADAQAAAAAAAAABAhEDITFBEjJREyJhBP/aAAwDAQACEQMRAD8A8RQ6Eh0So4hDgogWSWAaABCSEEkBQ8USRQ0USxRNXIeKJIoUUSRiSuQoxJFEeMSRREqQKiJtL9EEk3toviWqGC/fMXU8ju+FWCb5W+ZPSwrfaalDAO2ie/M0qGCa09+mxlly68NseL9ZFPKk9/mHVyJ24lJrxOkpYJ72v3k/3GTsrP6NGP8ANf1t/Fj+OAxGEnD1ou3atirKJ6Di8vundLs2OZzPJpR60F4pczbDll8sc+GzuMCUQGixKPLmRyibbYWIWgWiVoFopKOwzQbQIALEhxICIQ4mBhEOICCMEMAVUOJDotmcQ9h7AZWBaJAWIwWDihkiSKAQUUSxQMUTRRNXIeKJYIaKJYomrkFFDU+s+5fEaq9LdvyLGDhqhb1NjzdNDCYW+6L+EpXkNRVo+RYwjRzZ57dmHHI0cPTSsauGjFLYy6PeamGd9dtDmtdGluGrLEaV3shsNRvsX40tATaz61CPNGXisGu436sdewpYiK8RKlcLnORp9aKs+5HLV6Dg7SVmeo4qBz+fZVxx4orVanTxc3qufm4Z5jh5IBonnEjaOtxWImgWiRoFoZI2JDtCQyIZhDMAYYcQAIwQwEqoNAoNFIPYQ9h7AorAskQDQgZIligEiWKCiDiiWKAiiWKJq4OKJYojiSxJXAWvL4GhhIalSjDfxZq4GnzIzvSuOdr8KfUYVBk6jeNkR04WOXbsX8M2zbwVOyWjZkYGk3ayOowOHdlcxy8tvS/luGvqakcLpsDl2mm31NilBWOjjwljk5M7Kwq2D7tfcZmKw9tzqMVFW0+fyMTHReui25izxkVx52uaxUCjJXi14mjjl7/mUIxupGDpedZtR4Ksl338mUWjd6TR/FX5fqYkj0cLvGV5uc1lYiaAZKyNmkZ1GxIdjIEnGYQzABQh0JjARhxgCsg0gUHEqoghDjCM62BYYIGSJYkcSWIhEkSWJHEliTWkGiSJGiaNOVuKzsJUSYb6s18EtDHovReBr4OWxlmrBr4ZaBQUb6tIgdV2SWzL2FyqNTR/C9/O5zX/AF1ytTLFC61i+ejR2GCoqSVjz/F5TWoRcocUk+67XYXcgzpxaXE+Ser38CfjJ2LuvRfu3DbwsWcPL2X+pl4HM+JWfYX/AEuzNscp6Y5Y32nqUrlHMMNeOlrhV8xUefuMDMM7fs3b18LhlcaMZltXzTB21MdwtfTtNL09aa4rdVc/07SlUk22nva6drcS/U57NOnHLbgelT/EXgzBkbnSr+P/AGr5sxGd/H9Y4eT7VGwJIkYDRozqJjINjJDSQzCGYAKGYSGYEAYJgjCBBoFBoaYIEMFgZwQgQAokkSOJJERxNEkiRRJYk1cSIv4SnL0sk2+GMUrX08LeJQizW4rQnJOzc/hZW+ZlyN+KSgr4fS60d7td5bwV7+Rm5fOcouU3e8nZve37ua+XRIy6gnkNTFcLb19xoYLP1SacqlGmt+tepJLvStYGWXxlutySngqHo5UXHhhO3EoXTutnsZ24tJMt9OswXSKnUpx4JUq/EnZRvSqTSdnwRnpKz7GUsdgaGJjKrh/w68b3jZxldcpR7R+jmTYClFpQdZun6P8AGpKSim7txS4UpbXlvoixHL3QkvxZVVwuN6iSrQXs3kn10uxq/f2mUx9U8Ll7ij0bzKd7S3vbc76FRqnxN6WODwGDtPTdy+B29R3opeRhLq3TbOb057MMTOb4YLnz2QNBUqdnWqxbf8zST8FzJcwwLk3wyldWaS9pHHZllmNnCUqMuGtx24ITpuUqevtye9+ReGO05XXh3s8RRUb8SirbtSjH3vQwsfV1ThZtap30a8TOyvB5heTq1auGhDDwjGM5SrxxVZbzabfBfnG+mliPBxrcTdSEYPW/A7wctHdd+pWeGr5Rx5bnhjdJcuTvW47Sab9G+cY72OWZ6NnOAj9yqVmusoVOt/crI86Zvw5bjLmxkvSNgMlaI2bMEbGCkCUkhmHYFgDDMdDMCCwQmMMldEkSNEiGmCBYQLEZwQgRgUQ4gIJCOJokkWRRJIsVVEsWX6PXjwbOSTT/AKo6NPysZ0WX8uqWuudtPqZ5zprhdUsBOXC4SWsJWv2p6/qbWWmXTe653Rp5fOxln4Xj9nQYWm9GadHBxfIzsDK+pvYJrT92OWuuLGHpNaJW+YFaMVe+/eXuOKWrRj16zrSkqbVo6N9r7ETq0bLAPr950kKl42MfIMC1JqXbzOqp5d1dh442+Czyk8sRwV7X1WxDiMupz6zVpW9aOj8+T8y5jMPwvQnwy0/eg8dllpz88Bw6cUrf1L/e3wK2MjGKskdXWox2toc/mlC2qDI8e3OdLsVbLoxXt1OB+EZyl9EedM6/ppX/AAqVLl6SrP4L/wCmcizr4J/Vyc32AwWGwJGzJHIENgjScFhAsAZDMJDMZAYLDYIyV0HEBBoaYIFhAsRnGHGAHQcQEGgNJEOJGg0JUSIkg7EcSSJKmhhlpfdvdlyLa1RTwr2NKnC8GZZNJ3VvDY9o28FmTdrOxydBWZt5WtTDPGOjiy/XQY7EydNvW9nZHNZX0klh4O9Pimpapvh4te1nRykmuG/IqTy+Ley17iJr3Gl78GyL7QFUq8FWl6B3tHrcUZJ7Litoz0Cj0lp8N+JaLW7scBR6IUqzV1a1+tF2a80dBlvRmlSbc5Sraprje3ki9e8emd14y7PV6d4H0nopOam3bidOagny61rGlSr8UeOD6r1TXNdxmY3KcNKak6NO9734VdM16daCSTtt7kRqb6V6BUxmmpkZpjVwPwFm9SzvF+S2OaxdVydr6bkXutJqRyuf451aluULxXe29X8l5GSybESvKT7ZSfxIWehjNTTz8ru7MwGEwWUkDBHYIyECxxmBEhmFEZjAWCwmCwJWQaBQSKSIYcYQOMOMAOgogoOIGNBIFBISoNE1CDk1GKbbaSS3bK7klu7HYdFskk8JWxzT0pVI0VbfRqVReV0vMm9Htj0Vt4FmhXtdFOjK1iSqjPW2m9dppTszXyibd7bpM5+M777mzk1VxkRlOl4XsOE6QQ9LKNVyg4yaUbau3PwOiwee0H7Mn5xX1MvOMpoVLSnBO7vxc15kWC6M4duylOHZ1tNewizDJvhMp+PQckznDtOMlKPK9uKPg+G7XuNipXorrKpT4bezxyb8rHF5f0JvBulXkm1ZScU7Pk9Grs1KnRl2STlJpq746rurWta+g5h0WWtreMx2H1u5LvaX0Zzub5koxvSlKq7pcEYvis3uRYzow1JueIqwTfqxey82zYyPBU6dOTS0a4by1crd7M7jN+V2axZ7ruVNN72uYuYYj0dKpPnZxX5n/wAl/NsUo3tpqcfnGYektCPqx3/ql2jww3UZZ/GMtgMJjM7HIBgsNkcmBAkCh5MZDScFhAscAoCY0B2IAYwTBGSsgkCgkUkQw4wjOMEMAJBxBQcQAkhVJWXeE3ZEE1fcJBllo+W4OWIxEaWtnJcT7I31PovL8FBUVSUUoejUOFbKNrWPE+hcIuvb2urJd6T1Pe8BG8V4IWfdZR4j0iymWDxEqb9W94PlKD2f0M11T2vpn0ZjjaNlaNaN3CXf2PuZ4bjqM6U5U6kXCcW4tPeLM/i6MctxZunqi7gK1pJ9hh069nqaWErLf3hlOlY3VdbSrKUeHdW56ooypV6bvT68d+BvbwZPlDi9t+ztRvUaCvZrsOO3413Y9xSyfpY6D68a9P8Asc4vzR0MentO3Vbv/kVN/wDxJcJldOetk/PUvRymC9n5GkzuukZfG3tzv3iriZcTUlFvWUouN13J6lzMMUoU+GOkUrWNDEU0tlscR0tzNQjaPrSuku7tIktp5Z9Ofz7MeObSenaYrY053I2zrxx1HJlluibBbGuMykk2BIJgsCAxrikxkUkVxmIZgBwHYMAmIwMEJgjJWQaBQSGk4hxgM4hCAEg4gLuJIQbY9JuQoq40qZYhATiUksrxcqFWFVbwknb+Zc15q59H5BWhVoQqwfFCUIyT7U0fNfBZnrH2OZ9pLA1HtepSu94v14+T1832C1snp8oHDdP+h0cZD0tJKOIitHyqx/ll+p6Ao6EFaAXETLT5YxdGdOcoVIuE4uzjLRxYNGq4u69z2Z7X036HUsYuJLgrJaVEvhLtR47meV18LU9HWg4vk/Zmu2L+hLaXbWyvMuFqSu48+2PcztMtzmnNatX8TzGk5Rd4uz/ej7TRw2LaavCz7YNr/wBXf6GGfHK6MOS4vY8vzCnb1ku40PvtNRfWu9ktjyPD46q11W/MuU8fiec1HvV27GPxuPtr9vTs88zmFKlJbys5Ph14YLd6Hk+ZY6Vao5y8Ev5Y8kel5LgOHKMyxdW748PKlCUt3a97eMnFf2nlckdHHx9bc2fL/awDkC2NJA3L0nYri4gLjXDQ2JyBbGGbHotmYyYmxkxpHcZjDMDS09h2DT2CZJhYI7BGSBBIZBIaTiEJK4C3RCjG5JGmFBfMrSLlsVOAcI6vyfwCgPD133xXwbGSSMQlFDokUQNXnAtZdiJ0KsK1J8M4SU4vvXJ9z28GDwjxEH0Z0bzeGLw8K8NpR1XOE1pKL70zUlC54l9m3SN4TEKlUlbD1pKLvtSq7Rn57Py7D3SjE0ncZ3pnYjCXMfM+j9DEQdOtTjOL7Vqn2p8n3nWypkLoB8YJk8M6RfZtiMM3Uw6eIob2Wtaku9L1l3r3HNU8Nb96n05SpWMHpH0IweLvVa9BVtrVp2Sl+eO0vn3mPJxXzHTxc8nWTxHDxkttC9gcBOrNRSlKUmopLVtvZI77AfZnO7c8VT4L6cFGTclybu1b4mjln/SspnGOLxuGWKknZzmoqEe5ewu97nPOHK3uadOf/ThJ1ds77UKP3TI1hYO15Yem7c7SUpe9png8ZHuX23YhPB0XFqUJ4iPWi7xceCTTTXI8OrQszrrgl32e4LSGix2wMDiBckYEkTpXzC2C2JsFsStk2JMFsSYEkGYyYmwNNS2HkBSegbEoDBDYIEhQSEIaThwEIcTknjzAh9RCKQngOvXX5ZfNCEBrCJYCEIz/AOwT2930EIDHV2PpzKf4NP8Ay4f6UIRWDPNcBYhFoHEp55/CfihxCpw1X/DP8i+R84faB/isT+Sn8kIRGasXUZ3/ANtYL88P9MjzrE/QQhKiqh2IQwaRGxCAI2DIQiavHwFiQhAYkJiEIJaWwbEISvQGMIQB/9k=" alt="">
+            <h2>Segun Agbaje</h2>
+            <p>Mr Segun Agbaje is the Group Chief Executive Officer of Guaranty Trust Holding Company Plc (GTCO Plc), one of Africa's leading financial services groups with a banking franchise that serves over 37 million customers across ten (10) African Countries and the United Kingdom.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
