@@ -1,0 +1,22 @@
+                <div class="social-link">
+                    <ul>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </ul>
+                </div>
+            <div class="footer-co">
+                <ul>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Do Not Share My Personal Information</a></li>
+                    <li><a href="#">CA Supply Chain Act</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                </ul>
+            <div id="main-footer">
+                <p>Copyright &copy; 2024 Starbucks Coffee Company. All rights reserved.</p>
+            </div>
