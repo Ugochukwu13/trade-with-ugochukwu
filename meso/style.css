@@ -1,0 +1,614 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+}
+
+/* NAVBAR */
+
+.logo img{
+    width: 50px;
+    border-radius: 30px;
+}
+.navbar{
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    margin-right: 75px;
+    margin-top: 10px;
+}
+.navbar li{
+    list-style: none;
+    display: inline;
+    margin: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 0px;
+}
+
+.navbar a:hover{
+    color: #F04076FF;
+}
+
+.navsocial img{
+    width: 35px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* HEADER */
+
+.home {
+    text-align: center;
+    background-color: pink;
+}
+
+
+.first .one-p{
+    line-height: 1.8rem; 
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.first .two-p{
+    line-height: 1.8rem; 
+    font-weight: 700;
+}
+
+.first .one-h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 10px;
+}
+
+.first .two-h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.first button{
+    width: 140px;
+    height: 45px;
+    border-radius: 30px;
+    border: black solid 1px;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+.first button a{
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+    color: black
+}
+
+.header-img img{
+    border-radius: 100%;
+    width: 400px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+/* section 1 */
+
+.section-1 .container {
+    display: flex;
+    justify-content: center
+}
+
+.section-1 h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#my-form{
+	padding: 20px;
+}
+
+.my-form .form-group {
+	padding-bottom: 0px;
+}
+
+.my-form input[type="text"]{
+	padding: 15px;
+    margin-right: 100px;
+    margin-left: -120px;
+	width: 350px;
+    height: 30px;
+}
+
+.my-form button {
+    width: 110px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: #F04076FF;
+}
+
+.my-form button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: medium;
+}
+
+.sidebar p{
+    font-size: large;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+/* SECTION 2 */
+
+.flex-container{
+    display: flex;
+}
+
+.third{
+    width: 33.3%;
+    margin-left: 70px;
+}
+
+.third p{
+    margin-left: 30px;
+}
+
+.third h1{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* SECTION 3 */
+
+.section-3 {
+    margin-top: 100px;
+}
+
+.section-3 .container{
+    display: flex;
+}
+
+.section-3 aside h1{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.section-3 aside p{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.section-3 aside button {
+    width: 168px;
+    height: 52px;
+    border-style: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    background-color: #F04076FF;
+}
+
+.section-3 aside a{
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: medium;
+}
+
+.section-3 .main-one{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* FOOTER */
+
+.footerNav{
+    background: black;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerNav ul li{
+    list-style: none;
+    display: inline;
+    margin: 20px;
+}
+
+.footerNav a{
+    text-decoration: none;
+    color: white;
+}
+
+.footerNav a:hover{
+    color: #F04076FF;
+}
+
+.footerNav img{
+    width: 30px;
+    border-radius: 10px;
+}
+
+/* OFFER */
+
+.o-head{
+    text-align: center;
+    line-height: 5rem;
+    margin-top: 80px;
+}
+
+.o-head h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.o-head p{
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.fourth{
+    width: 33.3%;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.fourth p{
+    margin-left: 0px;
+    line-height: 2rem;
+}
+
+.fourth h1{
+    margin-top: 10px;
+    font-size: x-large;
+    line-height: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.fourth button{
+    margin-top: 30px;
+    width: 108px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50px;
+    margin-left: -10px;
+    background-color: #F04076FF;
+}
+
+.fourth button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.fourth ::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* PRICING */
+
+.prices{
+    background: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+}
+
+.p-head .p-one{
+    color: #fff;
+    text-align: center;
+}
+
+.p-head .p-two{
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.p-head h1{
+    color: #fff;
+    font-size: 39.7px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.p-head button {
+    margin-top: 30px;
+    width: 108px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50px;
+    margin-left: 600px;
+    margin-bottom: 200px;
+    background-color: #F04076FF;
+}
+
+.p-head button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+.p-first{
+    width: 100.3%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.p-secound{
+    width: 100.3%;
+    margin-left: 0px;
+    margin-top: 80px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.basics{
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.basic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.basic-sp{
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.basic-dsp{
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.basic-price{
+    color: #F04076FF;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+.basicprice{
+    color: #F04076FF;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+.p-first button{
+    width: 158px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #F04076FF;
+}
+
+.p-secound button{
+    width: 168px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #F04076FF;
+    margin-bottom: 50px;
+}
+
+.p-first button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.p-secound button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.p-first ::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.p2-section{
+    margin-top: 30px;
+    background-color: lightgrey;
+    padding: 30px;
+}
+
+.p2-section h1{
+    color: #F04076FF;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.p2-section p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.pContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.last-p{
+    margin-top: 50px;
+}
+
+.last-p h1{
+    font-size: x-large;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.last-p p{
+    font-weight: 600;
+}
+
+aside{
+    margin-top: 30px;
+}
+
+/* CONTACT US */
+
+.c-header{
+    background-color:  #F04076FF;
+}
+.c-head {
+    text-align: center;
+}
+
+.cfirsth1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 45px;
+    color: #fff;
+}
+
+.cfirstp {
+    font-size: larger;
+    font-weight: 200;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.c-head button{
+    width: 138px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+
+.c-head button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+hr{
+    width: 500px;
+    margin-left: 425px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: black;
+}
+
+.csecondh2{
+    text-align: center;
+    font-size: larger;
+}
+
+.csecondh1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.cContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.csection {
+    margin-top: 40px;
+}
+
+.csection h1{
+    margin-bottom: 30px;
+}
+
+.my-form label{
+	display: block;
+    font-weight: 500;
+}
+
+.my-form textarea{
+	padding: 15px;
+	width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.my-form input[type="text"]{
+    padding: 15px;
+	width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 0px;
+}
+.my-form input[type="email"], .my-form input[type="tel"]{
+    padding: 7px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.my-form input[type="submit"]{
+	background-color: black;
+	color: white;
+	padding: 10px 15px;
+    margin-left: 120px;
+    margin-top: 30px;
+	border-radius: 15px;
+	border: none;
+    background-color: #F04076FF;
+}
